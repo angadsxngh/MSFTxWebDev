@@ -166,40 +166,54 @@
     font-size:20px;
   
   }
+ /*cards using flip animation*/
 
-  
-  
-.card:hover {
- transform: rotateY(180deg);
- cursor: pointer;
+   .card{
+    position: relative;
+    height: 50px;
+    width: 90px;
+    margin: 5%;
+    display: inline-block;  /*to place the cards or books side by side*/
+    transform-style: preserve-3d; /* to render the elements in 3D space*/
+    transition: transform 1s;  
+   }  
+
+   .card:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+   }
+   
+   .card-side-front {
+    background-color: #ebebeb;
+    border: 1px solid #ebebeb;
+   }
+   
+   
+   .card-side-front, .card-side-back {
+   position: absolute;
+   backface-visibility: hidden;
+   width: 100%;
+   height: 100%;
 }
 
-.card-side-front {
- background-color: #ebebeb;
- border: 1px solid #ebebeb;
-}
+   
+ .card-side-back {
+    background: #ebebeb;
+    transform: rotateY(180deg);
+   }
+   
+.card-side-back p{
+    block-size: auto;
+    font-size: 12px;
+    padding: 8px;
+   }
 
-
-.card-side-front, .card-side-back {
- position: absolute;
- width: 100%;
- height: 100%;
- backface-visibility: hidden;
- border: 1px solid #ebebeb;
-}
-
-.card-side-back {
- background: #ebebeb;
- transform: rotateY(180deg);
-}
-
-
-img {
- width: 100px; 
-}
-
-h2{
- font-size: small;
-}
+ .card-side-front img {
+    height: 200px; 
+   }
+   
+ h2{
+    font-size: small;
+   }
     
   
