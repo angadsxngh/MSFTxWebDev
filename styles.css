@@ -166,5 +166,40 @@
     font-size:20px;
   
   }
+
+  
+  
+.card:hover {
+ transform: rotateY(180deg);
+ cursor: pointer;
+}
+
+.card-side-front {
+ background-color: #ebebeb;
+ border: 1px solid #ebebeb;
+}
+
+
+.card-side-front, .card-side-back {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ backface-visibility: hidden;
+ border: 1px solid #ebebeb;
+}
+
+.card-side-back {
+ background: #ebebeb;
+ transform: rotateY(180deg);
+}
+
+
+img {
+ width: 100px; 
+}
+
+h2{
+ font-size: small;
+}
     
   
