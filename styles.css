@@ -189,3 +189,22 @@ box-shadow: 0 0 8px rgba(255, 255,255,0.9);
  width: 100%;
  height: 100%;
 }
+.card-side-back {
+  background: #ebebeb;
+  transform: rotateY(180deg);
+ }
+ 
+.card-side-back p{
+  block-size: auto;
+  font-size: 12px;
+  padding: 8px;
+ }
+
+.card-side-front img {
+  height: 200px; 
+ }
+ 
+.card-side-back h2{
+  font-size: small;
+  padding-top: 15px;
+ }
