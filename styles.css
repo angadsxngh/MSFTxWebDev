@@ -1,203 +1,191 @@
-*{
-    margin: 0;
-    font-size: x-large;
-  }
-  
-  .body{
-    background-color: #ebebeb;
-    overflow: hidden;
-  }
-  
-  
-  .nav-bar{
-    background-color: white;
-    display: flex;
-    height: 15vh;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  
-  .list{
-    list-style: none;
-    display: flex;
-    gap: 25%;
-    margin-right: 100px;
-  }
-  
-  .menuu{
-    margin-left: 30px;
-  } 
-  
-  .logoo{
-    position: absolute;
-    left: 50%;
-    translate: -50%;
-  }
-  .btn_one i{
-    color:black;
-    font-size:25px;
-    
-    font-weight: 700;
-    margin-left: 5px;
-    margin-top:7px;
-  
-    
-  
-  }
-  .sidebar_menu{
-    position: fixed;
-    left:-350px;
-    height: 100vh;
-     width:300px;
-     background-color:white;
-     box-shadow: 10px 10px 5px lightblue;
-  
-  }
-  .sidebar_menu .logo{
-    width:100px;
-  box-shadow: 0 0 8px rgba(255, 255,255,0.9);
-  }
-  .sidebar_menu .logo a{
-    position:absolute;
-    left:50px;
-    color:black;
-    text-decoration:none;
-    font-size:20px;
-  
-  
-  
-  }
-  .sidebar_menu .btn_two{
-    color:grey;
-    font-size:25px;
-    margin-left:260px;
-    opacity:1;
-    cursor:pointer;
-    padding:0 3px;
-    margin-bottom:180%;
-    
-  
-  }
-  
-  
-  .menu{
-    position:absolute;
-    width:100%;
-    top:100px;
-  }
-  .menu li{
-    margin-top:6px;
-    padding: 10px 20px;
-  }
-  .menu a{
-    color:black;
-    text-decoration: none;
-    font-size:20px;
-    box-shadow: 0 0 8px rgba(255, 255,255,0.5);
-  
-  }
-  
-  
-
-  #check{
-    display:none;
-    opacity:0;
-  }
-  .btn_two i:hover{
-    font-size:20px;
-    cursor:pointer;
-  }
-  
-  .main_box{
-    z-index: 999;
-  }
-  .main_box .btn_one{
-    top:px;
-  }
-  .menu a:hover{
-    font-size:33px;
-    text-shadow: 2px 2px 5px grey;
-  
-  
-  }
-  .btn_one{
-    color:blue;
-  }
-  #check:checked~ .sidebar_menu {
-    left:0;
-  }
-  #check:checked~ .btn_one i{
-    opacity:0;
-  }
-  .logo a{
-    top:20px;
-    box-shadow: 10px 10px 5px lightblue;
-  
-  }
-  .sticky-nav{
-    background-color: black;
-    height: 5vh;
-    
-    border-radius: 10rem;
-    margin-left:400px;
-    margin-right: 400px;
-  }
-  
-  .elements{
-    text-decoration: none;
-    
-    font-size:20px;
-  
-  }
- /*cards using flip animation*/
-
-   .card{
-    position: relative;
-    height: 50px;
-    width: 90px;
-    margin: 5%;
-    display: inline-block;  /*to place the cards or books side by side*/
-    transform-style: preserve-3d; /* to render the elements in 3D space*/
-    transition: transform 1s;  
-   }  
-
-   .card:hover {
-    transform: rotateY(180deg);
-    cursor: pointer;
-   }
-   
-   .card-side-front {
-    background-color: #ebebeb;
-    border: 1px solid #ebebeb;
-   }
-   
-   
-   .card-side-front, .card-side-back {
-   position: absolute;
-   backface-visibility: hidden;
-   width: 100%;
-   height: 100%;
+/*sticky nav bar*/
+@font-face {
+  font-family: Ralewy;
+  src: url(/fonts/Raleway-VariableFont_wght.ttf);
 }
 
-   
- .card-side-back {
-    background: #ebebeb;
-    transform: rotateY(180deg);
-   }
-   
-.card-side-back p{
-    block-size: auto;
-    font-size: 12px;
-    padding: 8px;
-   }
+.body{
+  background-color: #ebebeb;
+  height: 100%;
+}
 
- .card-side-front img {
-    height: 200px; 
-   }
-   
- h2{
-    font-size: small;
-   }
-    
-  
+.navbar{
+  background-color: #ebebeb;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  align-items: center;
+  height: 15%;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0,0.2);
+}
+
+
+.logo{
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 10%;
+  cursor: pointer;
+}
+
+.list{
+  list-style: none;
+  display: flex;
+  gap: 50%;
+  padding-right: 5%;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 2%;
+  right: 1%;
+}
+
+.list li{
+  cursor: pointer;
+}
+
+.menuu{
+  position: absolute;
+  left: 1%;
+  cursor: pointer;
+}
+
+
+/*nav bar*/
+.btn_one i{
+  color:black;
+  font-size:25px;
+  font-weight: 700;
+  margin-left: 5px;
+  margin-top: 45px;
+  cursor: pointer;
+}
+
+.sidebar_menu{
+  position: fixed;
+  left:-350px;
+  height: 100vh;
+   width:300px;
+   background-color:white;
+   box-shadow: 10px 10px 5px lightblue;
+}
+
+.sidebar_menu .logo{
+  width:100px;
+box-shadow: 0 0 8px rgba(255, 255,255,0.9);
+}
+
+.sidebar_menu .logo a{
+  position:absolute;
+  left:50px;
+  color:black;
+  text-decoration:none;
+  font-size:20px;
+}
+.sidebar_menu .btn_two{
+  color:grey;
+  font-size:25px;
+  margin-left:260px;
+  opacity:1;
+  cursor:pointer;
+  padding:0 3px;
+  margin-bottom:180%;
+}
+
+
+.menu{
+  position:absolute;
+  width:100%;
+  top:100px;
+}
+.menu li{
+  margin-top:6px;
+  padding: 10px 20px;
+}
+.menu a{
+  color:black;
+  text-decoration: none;
+  font-size:20px;
+  box-shadow: 0 0 8px rgba(255, 255,255,0.5);
+
+}
+
+#check{
+  display:none;
+  opacity:0;
+}
+.btn_two i:hover{
+  font-size:20px;
+  cursor:pointer;
+}
+
+.main_box{
+  z-index: 999;
+}
+.main_box .btn_one{
+  top:px;
+}
+.menu a:hover{
+  font-size:33px;
+  text-shadow: 2px 2px 5px grey;
+
+}
+.btn_one{
+  color:blue;
+}
+#check:checked~ .sidebar_menu {
+  left:0;
+}
+#check:checked~ .btn_one i{
+  opacity:0;
+}
+.logo a{
+  top:20px;
+  box-shadow: 10px 10px 5px lightblue;
+
+}
+.sticky-nav{
+  background-color: black;
+  height: 5vh;
+  border-radius: 10rem;
+  margin-left:400px;
+  margin-right: 400px;
+}
+
+.elements{
+  text-decoration: none;
+  font-size:20px;
+}
+
+/*cards/books using flip animation*/
+.card{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin: 5%;
+  padding-top: 5%;
+  padding: 2%;
+  display: inline-block;  /*to place the cards or books side by side*/
+  transform-style: preserve-3d; /* to render the elements in 3D space*/
+  transition: transform 1s;  
+ }  
+
+ .card:hover {
+  transform: rotateY(180deg);
+  cursor: pointer;
+ }
+ 
+ .card-side-front {
+  background-color: #ebebeb;
+  border: 1px solid #ebebeb;
+ }
+ 
+ 
+ .card-side-front, .card-side-back {
+ position: absolute;
+ backface-visibility: hidden;
+ width: 100%;
+ height: 100%;
+}
