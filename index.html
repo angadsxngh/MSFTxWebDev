@@ -1,129 +1,135 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Bookstore</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Bookstore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
+    <link rel="Stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,200;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;1,100&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body class="body">
-  <div class="nav-bar">
-    <div class="menuu"><p>menu</p></div>
-    <div class="logoo"><p>logo</p></div>
-    <div class="">
-      <ul class="list">
-        <li><p>find</p></li>
-        <li><p>wishlist</p></li>
-        <li><p>cart</p></li>
-      </ul>
-    </div>
-  </div>
-  <div class="main_box">
-    <input type="checkbox" id="check" />
-    <div class="btn_one">
-      <label for="check" style="color: black">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-    </div>
-
-    <div class="sidebar_menu">
-
-      <div class="btn_two">
-        <label for="check" style="color: grey">
-          <i class="fa-solid fa-xmark"></i>
-        </label>
-      </div>
-
-      <div class="menu">
-        <ul>
-          <li>
-            
-            <a href="#">AUTHORS</a>
-          </li>
-          <li>
-            
-            <a href="#">MOTIVATION</a>
-          </li>
-          <li>
-           
-            <a href="#">ANIME</a>
-          </li>
-          <li>
-         
-            <a href="#">FICTION</a>
-          </li>
-          <li>
-            
-            <a href="#">STORE</a>
-          </li>
-          <li>
-           
-            <a href="#">ACCOUNT</a>
-          </li>
-          <li>
-            <a href="#">FEEDBACK</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+  <!-- nav bar starts -->
+  <div class="navbar">
+    <div class="menuu">
+    <!--sticky nav bar starts-->    
+      <div class="main_box">
+        <input type="checkbox" id="check" />
+        <div class="btn_one">
+          <label for="check" style="color: black">
+            <i class="fa-solid fa-bars"></i>
+          </label>
         </div>
+    
+        <div class="sidebar_menu">
+          
+          <div class="btn_two">
+            <label for="check" style="color: grey">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+          </div>
+    
+          <div class="menu">
+            <ul>
+              <li>
+                
+                <a href="#">AUTHORS</a>
+              </li>
+              <li>
+                
+                <a href="#">MOTIVATION</a>
+              </li>
+              <li>
+               
+                <a href="#">ANIME</a>
+              </li>
+              <li>
+             
+                <a href="#">FICTION</a>
+              </li>
+              <li>
+                
+                <a href="#">STORE</a>
+              </li>
+              <li>
+               
+                <a href="#">ACCOUNT</a>
+              </li>
+              <li>
+                <a href="#">FEEDBACK</a>
+              </li>
+            </ul>
+          </div>
+    
+        
+        </div>
+       </div>
+      </div>
+      <!--sticky nav bar ends-->   
+    <div class="logo">
+        <h1>logo</h1>
+    </div>
+    <div class="options">
+        <ul class="list">
+            <li class="find"><p>find</p></li>
+            <li class="liked"><p>liked</p></li>
+            <li class="cart"><p>cart</p></li>
+        </ul>
+    </div>
   </div>
-   <!--cards using flip animations-->
-   <div class="card">
-    <div class="card-side card-side-front">
-      <!--  <h2>Book 1</h2>-->
-        <p><img src="Book1.jpg" alt="Book 1" > </p>
-    </div>
-    <div class="card-side card-side-back">
-        <h2>Book Description</h2>
-        <p>How to Win Friends and Influence People explains that nowadays people select friends and one should have distinguished qualities to make someone want to befriend you.</p>
-    </div>
 </div>
+<!-- nav bar ends -->
 
+<!--cards/books using flip animations-->
+<!--Book 1-->
 <div class="card">
-    <div class="card-side card-side-front">
-       <!--<h2>Book 2</h2>--> 
-        <p><img src="book 2.jpg" alt="Book 2" ></p>
-    </div>
-    <div class="card-side card-side-back">
-        <h2>Book Description</h2>
-        <p>Human beings are flawed and limited—“not everybody can be extraordinary, there are winners and losers in society and some of it is not fair or your fault.”</p>
-    </div>
+  <div class="card-side card-side-front">
+      <p><img src="Book1.jpg" alt="Book 1" > </p>
+  </div>
+  <div class="card-side card-side-back">
+      <h2>Book Description</h2>
+      <p>How to Win Friends and Influence People explains that nowadays people select friends and one should have distinguished qualities to make someone want to befriend you.</p>
+  </div>
 </div>
 
+<!--Book 2-->
 <div class="card">
-    <div class="card-side card-side-front">
-       <!--<h2>Book 3</h2>--> 
-        <p><img src="book 3.jpg" alt="Book 3" ></p>
-    </div>
-    <div class="card-side card-side-back">
-        <h2>Book Description</h2>
-        <p>By reading Master Your Emotions, you’ll learn how to deal with negative emotions so you can live a happier, more fulfilling life.</p>
-    </div>
+  <div class="card-side card-side-front">
+      <p><img src="book 2.jpg" alt="Book 2" ></p>
+  </div>
+  <div class="card-side card-side-back">
+      <h2>Book Description</h2>
+      <p>Human beings are flawed and limited—“not everybody can be extraordinary, there are winners and losers in society and some of it is not fair or your fault.”</p>
+  </div>
 </div>
 
+<!--Book 3-->
 <div class="card">
-    <div class="card-side card-side-front">
-       <!--<h2>Book 4</h2>--> 
-        <p><img src="Book 4.jpg" alt="Book 4" ></p>
-    </div>
-    <div class="card-side card-side-back">
-        <h2>Book Description</h2>
-        <p>The 48 Laws of Power is a self-help book.Understanding these powers,readers will also understand how to rise up to claim what is rightfully theirs.</p>
-    </div>
+  <div class="card-side card-side-front">
+      <p><img src="book 3.jpg" alt="Book 3" ></p>
+  </div>
+  <div class="card-side card-side-back">
+      <h2>Book Description</h2>
+      <p>By reading Master Your Emotions, you’ll learn how to deal with negative emotions so you can live a happier, more fulfilling life.</p>
+  </div>
 </div>
 
+<!--Book 4-->
 <div class="card">
-    <div class="card-side card-side-front">
-       <!--<h2>Book 5</h2>--> 
-        <p><img src="book5.jpg" alt="Book 5" ></p>
-    </div>
-    <div class="card-side card-side-back">
-        <h2>Book Description</h2>
-        <p>We all have an ikigai.It's the Japanese word for ‘a reason to live’.It’s the place where your needs, desires, ambitions, and satisfaction meet.</p>
-    </div>
+  <div class="card-side card-side-front">
+      <p><img src="Book 4.jpg" alt="Book 4" ></p>
+  </div>
+  <div class="card-side card-side-back">
+      <h2>Book Description</h2>
+      <p>The 48 Laws of Power is a self-help book.Understanding these powers,readers will also understand how to rise up to claim what is rightfully theirs.</p>
+  </div>
 </div>
 
-  
 </body>
 </html>
